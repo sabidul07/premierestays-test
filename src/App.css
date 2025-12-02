@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondry: #f7b730;
+  --color-gray: #4e5258;
+  --color-darkblue: #2b3244;
+  --color-purple: #a020f0;
+  --color-violetblue: #586df7;
+  --color-cloudblue: #e5ecfd;
+  --color-lavendermist: #f8f7fc;
+  --color-cosmicnavy: #100a55;
+  --color-shadowgray: #4d5461;
+  --color-deepblue: #000929;
+}
+@layer {
+  .custom-container {
+    @apply w-full max-w-[1336px] mx-auto px-4;
+  }
+  .nav-links {
+    @apply text-[#4E5258] leading-[160%] hover:text-[#F7B730] transition-all duration-300 ease-in-out;
+  }
+  .section-heading {
+    @apply text-[26px] sm:text-[28px] sm:text-3xl md:text-4xl xl:text-5xl font-medium leading-[130%];
+  }
+  .primary-btn {
+    @apply text-lg font-semibold leading-[160%] py-5 px-7 flex items-center gap-2 rounded-[100px] bg-[#F7B730] cursor-pointer;
+  }
+  .nav-btn {
+    @apply flex items-center gap-2  text-[#586DF7] px-7 py-3.5 border border-[#586DF7] rounded-[100px] hover:border-secondry hover:text-secondry transition-all duration-300 ease-in-out cursor-pointer;
+  }
+}
