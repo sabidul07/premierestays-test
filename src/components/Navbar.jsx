@@ -1,14 +1,9 @@
 import React from "react";
 import navlogo from "../assets/nav-logo.png";
 import Rightarrow from "./Icons/Rightarrow";
-const navlink = [
-  { link: "Home" },
-  { link: "About Us" },
-  { link: "Services" },
-  { link: "Book Now" },
-  { link: "FAQ" },
-  { link: "Contact Us" },
-];
+import { navlink } from "./Helper";
+import NavLinks from "./NavLinks";
+
 const Navbar = () => {
   const menutoggle = () => {
     const menulink = document.getElementById("sidebar");
@@ -31,16 +26,8 @@ const Navbar = () => {
             alt="nav-logo"
           />
         </a>
-        <ul className="items-center  lg:flex gap-9 hidden py-4 px-7">
-          {navlink.map((item, index) => (
-            <li key={index}>
-              <a href="#" className="nav-links">
-                {item.link}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div className="items-center lg:flex gap-5 hidden py-4 px-7">
+        <NavLinks />
+        <div className="items-center justify-between lg:flex gap-5 hidden py-4 ">
           <a className="nav-links" href="#">
             Login
           </a>
@@ -49,7 +36,6 @@ const Navbar = () => {
             <Rightarrow />
           </button>
         </div>
-
         <button
           id="menuicon"
           onClick={menutoggle}

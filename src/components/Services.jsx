@@ -87,7 +87,7 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="">
+          <div>
             <Swiper
               modules={[Navigation]}
               navigation={true}

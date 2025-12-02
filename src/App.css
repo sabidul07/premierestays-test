@@ -11,6 +11,7 @@
   --color-cosmicnavy: #100a55;
   --color-shadowgray: #4d5461;
   --color-deepblue: #000929;
+  --color-lavender: #dde1f5;
 }
 @layer {
   .custom-container {
@@ -26,6 +27,13 @@
     @apply text-lg font-semibold leading-[160%] py-5 px-7 flex items-center gap-2 rounded-[100px] bg-[#F7B730] cursor-pointer;
   }
   .nav-btn {
-    @apply flex items-center gap-2  text-[#586DF7] px-7 py-3.5 border border-[#586DF7] rounded-[100px] hover:border-secondry hover:text-secondry transition-all duration-300 ease-in-out cursor-pointer;
+    @apply flex items-center gap-2  text-violetblue px-7 py-3.5 border border-violetblue rounded-[100px] hover:border-secondry hover:text-secondry transition-all duration-300 ease-in-out cursor-pointer;
   }
+}
+
+.custom-prev,
+.custom-next {
+  background: #000;
+  width: 102px;
+  height: 120px;
 }

@@ -1,35 +1,7 @@
-import React from "react";
 import HomeIcon from "./Icons/HomeIcon";
-import Location from "./Icons/LocationIcon";
-import self from "./Icons/SelfIcon";
-import pricing from "./Icons/PricingIcon";
 
-const featurecard = [
-  {
-    icon: HomeIcon,
-    bg: "#586DF7",
-    heading: "Direct Booking with No Service Fees",
-    para: "Encourages guests to book directly through the website and avoid third-party platform fees",
-  },
-  {
-    icon: Location,
-    bg: "#F86E04",
-    heading: "Luxury, Fully-Furnished Vacation Rentals",
-    para: "Encourages guests to book directly through the website and avoid third-party platform fees",
-  },
-  {
-    icon: self,
-    bg: "#38C6F9",
-    heading: "Self Check-In with Smart Lock Technology",
-    para: "Easy, contactless access to all properties through keyless entry, ensuring convenience and security.",
-  },
-  {
-    icon: pricing,
-    bg: "#A020F0",
-    heading: "Transparent Pricing & Instant Booking",
-    para: "Guests can view detailed pricing breakdowns with taxes and cleaning fees included, and instantly reserve",
-  },
-];
+import { featurecard } from "./Helper";
+
 const OurFeature = () => {
   return (
     <>
@@ -43,7 +15,7 @@ const OurFeature = () => {
         <div className="custom-container flex flex-wrap justify-center xl:flex-nowrap gap-14">
           <div className="grid sm:grid-cols-2  gap-7">
             {featurecard.map((items, index) => (
-              <div className="bg-white p-4 rounded-xl">
+              <div className="bg-white p-4 rounded-xl" key={index}>
                 <div
                   style={{ backgroundColor: items.bg }}
                   className=" w-14 h-14 rounded-full grid place-content-center mb-3"

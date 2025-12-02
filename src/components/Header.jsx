@@ -26,7 +26,7 @@ const Header = () => {
           className="custom-container gap-5 flex items-center flex-wrap justify-center bg-white shadow-[10px_20px_60px_0px_#00000008]
          sm:p-[30px] p-4 rounded-t-2xl"
         >
-          <div className="w-full md:w-[319px] py-5 px-4 border border-[#DDE1F5] rounded-lg flex items-center gap-px">
+          <div className="w-full md:w-[319px] py-5 px-4 border border-lavender rounded-lg flex items-center gap-px">
             <Location />
             <input
               className="placeholder:text-gray placeholder:font-medium outline-0"
@@ -34,8 +34,7 @@ const Header = () => {
               placeholder="Search by location"
             />
           </div>
-
-          <div className="w-full md:w-[319px] py-5 px-4 border border-[#DDE1F5] rounded-lg flex items-center">
+          <div className="w-full md:w-[319px] py-5 px-4 border border-lavender rounded-lg flex items-center">
             <button className="flex items-center gap-2.5 text-gray font-medium cursor-pointer">
               <DateIcon />
               Check-in
@@ -46,15 +45,13 @@ const Header = () => {
               Check-out
             </button>
           </div>
-
-          <div className="w-full md:w-[319px] py-5 px-4 border border-[#DDE1F5] rounded-lg flex items-center gap-2.5 cursor-pointer">
+          <div className="w-full md:w-[319px] py-5 px-4 border border-lavender rounded-lg flex items-center gap-2.5 cursor-pointer">
             <div className="flex items-center gap-0.5 font-medium text-gray">
               <GuestIcon />
               Guests
             </div>
             <GuestArrow />
-
-            <div className="hidden w-52 text-center bg-white text-gray font-medium border border-[#DDE1F5] py-4 space-y-4 rounded absolute bottom-20 left-0">
+            <div className="hidden w-52 text-center bg-white text-gray font-medium border border-lavender py-4 space-y-4 rounded absolute bottom-20 left-0">
               <p className="hover:bg-green-300">Rahul</p>
               <p className="hover:bg-green-300">Rahul</p>
               <p className="hover:bg-green-300">Rahul</p>
